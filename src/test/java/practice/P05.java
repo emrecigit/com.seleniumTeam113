@@ -17,5 +17,8 @@ public class P05 {
 //  11- Sayfayı kapatsın
 //  10-8. maddededeki Test sonucunu yazdırsın
      */
+    public static void main(String[] args) {
+
+    }
 
 }
