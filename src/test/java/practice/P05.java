@@ -1,5 +1,10 @@
 package practice;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import java.time.Duration;
+
 public class P05 {
     /*
 //  1-Driver oluşturalim
@@ -18,7 +23,10 @@ public class P05 {
 //  10-8. maddededeki Test sonucunu yazdırsın
      */
     public static void main(String[] args) {
-
+        System.setProperty("webdriver.chrome.driver","src/resources/chromedriver_win32/chromedriver.exe");
+        WebDriver driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
 }
